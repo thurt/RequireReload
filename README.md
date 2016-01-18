@@ -1,11 +1,39 @@
-requireReload for Nodejs
+rerequire for NodeJS
 ============================
 
+```
+npm install -g git+https://git@github.com/thurt/rerequire.git
+```
 
-## Usage
+*start global module from the command line*
+```
+$ rerequire
+```
 
+*this opens a Node REPL that has a rerequire method*
+```
+>
+```
 
-## Why
+*enter a module to rerequire*
+```
+> rerequire('camelcase', 'cc')
+```
 
-Sometimes when you are developing some javascript in one file, you would like to simultaneously interact with it from the Node REPL. This lets you
+*access the rerequired module with the name you gave for second argument*
+```
+> cc('look-it-works')
+'lookItWorks'
+>
+```
 
+*modify the module you have rerequired and then save it--*
+*you do not have to restart the REPL, nor re-require the module, nor clear require.cache*
+```
+> cc('look-it-works')
+'I added this to the source!'
+'lookItWorks'
+>
+```
+
+*Simple*
