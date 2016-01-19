@@ -1,6 +1,6 @@
 {
   "name": "rerequire",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Automatically reload required modules whenever the file changes",
   "main": "./lib/rerequire.js",
   "preferGlobal": "true",
