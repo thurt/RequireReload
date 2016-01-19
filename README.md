@@ -19,6 +19,8 @@ $ rerequire
 *enter a module to rerequire*
 ```
 > rerequire('camelcase', 'cc')
+true
+>
 ```
 
 *access the rerequired module with the name you gave for second argument*
@@ -29,7 +31,7 @@ $ rerequire
 ```
 
 *modify the module you have rerequired and then save it--*
-*you do not have to restart the REPL, nor re-require the module, nor clear require.cache*
+*you do not have to restart the REPL or rerequire the module*
 ```
 > cc('look-it-works')
 'I added this to the source!'
