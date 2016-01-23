@@ -1,15 +1,15 @@
 {
   "name": "rerequire",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Automatically reload required modules whenever the file changes",
-  "main": "./lib/rerequire.js",
+  "main": "./bin/index.js",
   "preferGlobal": "true",
+  "bin": {
+    "rerequire": "./bin/index.js"
+  },
   "directories": {
     "test": "test"
   },
-  "bin": {
-    "rerequire": "./bin/rerequire.js"
-   },
   "scripts": {
     "lint": "standard --format && standard",
     "test": "istanbul cover mocha"
